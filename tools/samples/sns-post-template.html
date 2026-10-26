@@ -3,43 +3,39 @@
 <head>
 <meta charset="utf-8">
 <title>SNS投稿画像テンプレート（書き出し用）</title>
-<!-- Sumi Web 自主制作サンプル：架空のカフェ「Café Aoiro」の新商品告知画像。render.js で 1080×1080 PNG に書き出します。 -->
+<!-- Sumi Web 自主制作サンプル：架空のカフェ「Blueberry Terrace」の新商品告知画像。render-sns.js で 1080×1080 PNG に書き出します。 -->
 <style>
   *{box-sizing:border-box;margin:0}
   html,body{width:1080px;height:1080px;overflow:hidden}
-  body{font-family:"IPAPGothic","IPAGothic",sans-serif;background:#e8f1fc;color:#183765;position:relative}
-  .ring{position:absolute;border-radius:50%;border:70px solid #3975c6;width:620px;height:620px;right:-230px;top:-220px;opacity:.9}
-  .dot{position:absolute;border-radius:50%;background:#4a4ea8}
-  .card{position:absolute;inset:56px;background:#fff;border-radius:48px;box-shadow:0 30px 60px rgba(24,55,101,.14)}
-  .art{position:absolute;right:60px;bottom:84px;width:360px}
-  .copy{position:absolute;left:120px;top:150px;width:520px}
-  .badge{display:inline-block;background:#4a4ea8;color:#fff;font-size:30px;letter-spacing:.14em;padding:10px 30px;border-radius:999px}
-  h1{font-size:80px;line-height:1.2;margin-top:30px;white-space:nowrap}
-  .lead{font-size:30px;line-height:1.6;margin-top:26px;color:#3b4a62}
-  .price{position:absolute;left:120px;bottom:150px;display:flex;align-items:flex-end;gap:12px}
-  .price b{font-size:120px;line-height:.9;font-family:Georgia,serif}
-  .price span{font-size:34px}
-  .period{position:absolute;left:120px;bottom:104px;font-size:28px;color:#3975c6;letter-spacing:.06em}
-  .brand{position:absolute;left:120px;top:96px;font-family:Georgia,serif;font-size:34px;letter-spacing:.06em}
-  .brand i{color:#3975c6}
-  .sample{position:absolute;left:0;right:0;bottom:12px;text-align:center;font-size:22px;color:#5d6b80}
+  body{font-family:"IPAPGothic","IPAGothic",sans-serif;background:#183765;color:#fff;position:relative}
+  .photo{position:absolute;top:0;right:0;width:620px;height:1080px;object-fit:cover}
+  .panel{position:absolute;left:0;top:0;width:460px;height:1080px;padding:80px 52px 0 64px;background:#183765}
+  .brand{font-family:Georgia,serif;font-size:34px;letter-spacing:.04em;position:relative;z-index:1}
+  .brand i{color:#9fc4f7}
+  .brand small{display:block;font-family:Georgia,serif;font-size:18px;letter-spacing:.3em;color:#9fc4f7;margin-top:6px}
+  .badge{display:inline-block;background:#6c5fc0;font-size:26px;letter-spacing:.14em;padding:8px 26px;border-radius:999px;margin-top:84px}
+  h1{font-size:62px;line-height:1.25;margin-top:26px;white-space:nowrap}
+  .lead{font-size:26px;line-height:1.7;margin-top:26px;color:#d5e2f4}
+  .price{display:flex;align-items:flex-end;gap:10px;margin-top:56px}
+  .price b{font-size:116px;line-height:.85;font-family:Georgia,serif}
+  .price span{font-size:30px}
+  .period{font-size:26px;color:#9fc4f7;letter-spacing:.06em;margin-top:22px;padding-top:18px;border-top:2px solid rgba(255,255,255,.25)}
+  .stamp{position:absolute;right:46px;top:46px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.92);color:#183765;display:grid;place-items:center;text-align:center;font-size:26px;line-height:1.45;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+  .stamp b{display:block;font-size:30px;color:#6c5fc0}
+  .sample{position:absolute;left:64px;bottom:40px;font-size:19px;line-height:1.6;color:#adc1d9;z-index:1}
 </style>
 </head>
 <body>
-  <div class="ring"></div>
-  <div class="dot" style="width:90px;height:90px;left:40px;bottom:40px"></div>
-  <div class="dot" style="width:46px;height:46px;left:140px;bottom:20px;background:#3975c6"></div>
-  <div class="card">
-    <p class="brand">Café <i>Aoiro</i></p>
-    <div class="copy">
-      <p class="badge">季節限定 NEW</p>
-      <h1>ブルーベリー<br>ミルクラテ</h1>
-      <p class="lead">甘酸っぱいソースと<br>まろやかなミルクの<br>初夏だけの一杯。</p>
-    </div>
-    <img class="art" src="../../samples/cafe/images/blueberry-latte.svg" alt="">
+  <img class="photo" src="../../samples/cafe/images/blueberry-latte.webp" alt="">
+  <div class="panel">
+    <p class="brand">Blueberry <i>Terrace</i><small>COFFEE &amp; SWEETS</small></p>
+    <p class="badge">季節限定 NEW</p>
+    <h1>ブルーベリー<br>ミルクラテ</h1>
+    <p class="lead">甘酸っぱいソースと<br>まろやかなミルクの<br>初夏だけの一杯。</p>
     <p class="price"><b>680</b><span>円（税込）</span></p>
     <p class="period">販売期間 6.1 — 8.31</p>
   </div>
-  <p class="sample">※Sumi Web 自主制作サンプル／架空の店舗です</p>
+  <p class="stamp"><span><b>自家製</b>ブルーベリー<br>ソース使用</span></p>
+  <p class="sample">※Sumi Web 自主制作サンプル<br>架空の店舗・イメージ画像です</p>
 </body>
 </html>

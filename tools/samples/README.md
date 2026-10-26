@@ -12,7 +12,7 @@
 
 ## 使用素材
 
-- イラスト：`samples/cafe/images/` の自作SVG
+- 写真：`samples/cafe/images/storefront.webp`・`blueberry-latte.webp`（運営者が用意したイメージ画像）
 - BGM：`make-bgm.py` で生成した自作音源
 - フォント：IPAPゴシック（IPAフォントライセンスv1.0。商用利用可、画像・動画への使用可）。インストールされていない環境では別のフォントで描画されます。
 

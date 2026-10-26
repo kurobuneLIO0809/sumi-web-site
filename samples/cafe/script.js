@@ -1,4 +1,4 @@
-// Café Aoiro（自主制作サンプル）: スマートフォン用メニューの開閉
+// Blueberry Terrace（自主制作サンプル）: スマートフォン用メニューの開閉
 const toggle = document.querySelector('.nav-toggle');
 const cafeNav = document.getElementById('cafe-nav');
 toggle?.addEventListener('click', () => {

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="t"><title id="t">ベイクドチーズケーキのイラスト（自作）</title>
+<ellipse cx="200" cy="262" rx="160" ry="18" fill="#183765" opacity=".12"/>
+<ellipse cx="200" cy="248" rx="160" ry="24" fill="#fff" stroke="#183765" stroke-width="6"/>
+<path d="M70 230l60-130 200 50v80z" fill="#f7e3b0" stroke="#183765" stroke-width="6" stroke-linejoin="round"/>
+<path d="M130 100l200 50-40 18-220-26z" fill="#c98a4b" stroke="#183765" stroke-width="6" stroke-linejoin="round"/>
+<path d="M70 212h260v18H70z" fill="#a8723f" stroke="#183765" stroke-width="6"/>
+<g stroke="#183765" stroke-width="4"><circle cx="200" cy="112" r="15" fill="#4a4ea8"/><circle cx="232" cy="122" r="13" fill="#3b3f8f"/></g>
+<path d="M150 150v40M190 150v46" stroke="#e8c97e" stroke-width="6" stroke-linecap="round"/>
+</svg>

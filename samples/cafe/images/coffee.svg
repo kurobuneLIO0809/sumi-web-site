@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="t"><title id="t">ハンドドリップコーヒーのイラスト（自作）</title>
+<ellipse cx="190" cy="262" rx="150" ry="18" fill="#183765" opacity=".12"/>
+<ellipse cx="190" cy="250" rx="140" ry="22" fill="#fff" stroke="#183765" stroke-width="6"/>
+<path d="M98 120h184l-16 104a30 30 0 0 1-30 26h-92a30 30 0 0 1-30-26z" fill="#fff" stroke="#183765" stroke-width="6" stroke-linejoin="round"/>
+<path d="M280 140c46-8 52 52 6 62" fill="none" stroke="#183765" stroke-width="6" stroke-linecap="round"/>
+<ellipse cx="190" cy="120" rx="92" ry="16" fill="#6b4a33" stroke="#183765" stroke-width="6"/>
+<path d="M112 160h156" stroke="#3975c6" stroke-width="10"/>
+<g fill="none" stroke="#9fb6d6" stroke-width="6" stroke-linecap="round"><path d="M160 90c-14-16 14-26 0-44"/><path d="M196 86c-14-16 14-26 0-44"/><path d="M232 90c-14-16 14-26 0-44"/></g>
+</svg>

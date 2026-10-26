@@ -4,18 +4,23 @@ HTML / CSS / JavaScript だけで動く静的サイトです。サーバー処�
 
 ## 公開前に設定する項目
 
-1. `assets/js/main.js` の `const contactEmail = '';` に、実際に受信できるメールアドレスを設定してください。空欄では問い合わせメールは作成されません。
+1. 問い合わせ先は `KodebyKraft@gmail.com` に設定済みです（`assets/js/main.js` の `contactEmail`、`index.html` の問い合わせ欄・フッター、`privacy.html`）。変更する場合はこれらをすべて書き換えてください。
 2. 掲載料金はすべて税別に統一しています。税込表示で運用する場合は、料金と注記をすべて変更してください。
 3. 個人情報、ログイン情報、非公開のクライアント情報がないか確認してください。
 
-## 制作サンプルの差し替え
+## 制作サンプル
 
-`index.html` の `#works` セクションにある各 `.work-card` が掲載枠です。未作成の作品を制作済みとして表示しないでください。
+`index.html` の `#works` セクションに、架空のカフェ「Café Aoiro」を題材にした自主制作サンプルを3点掲載しています。実在する店舗・お客様の受注実績ではないため、「自主制作サンプル」の表記は受注実績に差し替えるまで残してください。
 
-- `assets/images/` に自作した画像を配置します。
-- 該当する `.sample` 要素を `<img src="assets/images/ファイル名.webp" alt="自主制作サンプル：内容の説明">` に置き換えます。
-- 動画は画像サムネイルに加え、公開済み動画へのリンクがある場合のみリンクを追加します。
-- 自主制作である表記は、受注実績になるまで残してください。
+| サンプル | 公開ページ | 主なファイル |
+| --- | --- | --- |
+| 架空のカフェのWebサイト | `samples/cafe/index.html` | `samples/cafe/`（HTML・CSS・JS・自作SVGイラスト） |
+| 新商品を宣伝するSNS画像 | `samples/sns-post.html` | `assets/images/samples/sns-blueberry-latte.png`（1080×1080） |
+| 商品紹介の縦型ショート動画 | `samples/short-video.html` | `assets/video/cafe-aoiro-short.mp4`（720×1280・15秒） |
+
+- イラストはすべて自作のSVG、BGMはプログラムで合成した自作音源です。外部の写真・音源は使っていません。
+- 画像・動画内の文字には IPAフォント（IPAフォントライセンスv1.0、商用利用可）を使用しています。
+- 画像・動画の再書き出し方法は `tools/samples/README.md` を参照してください。
 
 ## ローカル確認
 

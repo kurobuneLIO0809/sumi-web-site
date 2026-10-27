@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kurobunelio0809.github.io/sumi-web-site/sitemap.xml

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sumi Webの自主制作サンプル。架空のカフェ「Blueberry Terrace」のレスポンシブWebサイトです。実在する店舗ではありません。">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#183765">
+  <title>Blueberry Terrace（架空のカフェ）｜Sumi Web 自主制作サンプル</title>
+  <link rel="icon" href="../../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sample-bar" role="note">
+    <p>このページは <strong>Sumi Webの自主制作サンプル</strong> です。「Blueberry Terrace」は架空の店舗で、実在しません。</p>
+    <a href="../../index.html#works">Sumi Webに戻る</a>
+  </div>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Blueberry Terrace ページの先頭へ">Blueberry <span>Terrace</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="cafe-nav"><span class="bars" aria-hidden="true"></span>MENU</button>
+      <nav id="cafe-nav" class="nav" aria-label="店舗サイトのナビゲーション">
+        <a href="#concept">コンセプト</a>
+        <a href="#new">新商品</a>
+        <a href="#menu">メニュー</a>
+        <a href="#info">店舗情報</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="kicker">COFFEE &amp; SWEETS ／ 架空の街のちいさなカフェ</p>
+          <h1>紺色の日よけの下で、<br>ひと息つける時間を。</h1>
+          <p>自家焙煎のコーヒーと、ブルーベリーを使ったスイーツのお店です。<br>おひとりでも、ゆっくりお過ごしください。</p>
+          <div class="hero-actions">
+            <a class="btn btn-main" href="#new">季節の新商品を見る</a>
+            <a class="btn btn-sub" href="#info">営業時間・アクセス</a>
+          </div>
+        </div>
+        <figure class="hero-art">
+          <img src="images/storefront.webp" srcset="images/storefront-768.webp 768w, images/storefront.webp 1536w" sizes="(max-width: 820px) 100vw, 540px" width="1536" height="1024" fetchpriority="high" alt="紺色の看板と日よけに「Blueberry Terrace」と書かれた店舗の外観。店先にブルーベリーミルクラテ680円の黒板とポスターが立っている（イメージ画像）">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="concept">
+      <div class="wrap concept">
+        <h2 class="title"><small>CONCEPT</small>毎日に、すこしの余白を。</h2>
+        <div class="concept-list">
+          <article>
+            <b>01</b>
+            <h3>自家焙煎のコーヒー</h3>
+            <p>浅煎りから深煎りまで3種類。豆の個性に合わせて、一杯ずつハンドドリップで淹れます。</p>
+          </article>
+          <article>
+            <b>02</b>
+            <h3>毎朝焼く焼き菓子</h3>
+            <p>スコーンやチーズケーキは店内で焼き上げ。自家製ブルーベリーソースを使った限定品も登場します。</p>
+          </article>
+          <article>
+            <b>03</b>
+            <h3>長居歓迎の14席</h3>
+            <p>窓際のカウンター席と、ゆったりしたテーブル席。読書や作業にもご利用ください。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section new" id="new">
+      <div class="wrap new-inner">
+        <figure class="new-art">
+          <img src="images/blueberry-latte.webp" srcset="images/blueberry-latte-600.webp 600w, images/blueberry-latte.webp 1000w" sizes="(max-width: 820px) 90vw, 460px" width="1000" height="1000" loading="lazy" alt="耐熱グラスのマグに入ったブルーベリーミルクラテ。底に紫のブルーベリーソース、上にミルクの泡とブルーベリー、ミントが乗っている（イメージ画像）">
+        </figure>
+        <div class="new-copy">
+          <p class="badge">季節限定 NEW</p>
+          <h2>ブルーベリー<br>ミルクラテ</h2>
+          <p class="new-lead">甘酸っぱい自家製ブルーベリーソースに、まろやかなミルクとエスプレッソを重ねました。混ぜるほどに色が変わる、初夏だけの一杯です。</p>
+          <ul class="points">
+            <li>自家製ブルーベリーソース使用</li>
+            <li>カフェインレスへの変更可（+50円）</li>
+            <li>アイスのみ・数量限定</li>
+          </ul>
+          <p class="price">680<small>円（税込）</small></p>
+          <p class="period">販売期間：6月1日〜8月31日（※架空の店舗のため実際の販売はありません）</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="wrap">
+        <h2 class="title"><small>MENU</small>メニュー</h2>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img src="images/coffee.svg" width="400" height="300" alt="湯気の立つカップに入ったハンドドリップコーヒー">
+            <div>
+              <h3>本日のハンドドリップ</h3>
+              <p>浅煎り・中煎り・深煎りからお選びいただけます。</p>
+              <p class="menu-price">520円</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="images/cheesecake.svg" width="400" height="300" alt="ブルーベリーを乗せたベイクドチーズケーキ">
+            <div>
+              <h3>ベイクドチーズケーキ</h3>
+              <p>濃厚でしっとり。コーヒーとの相性を考えた甘さです。</p>
+              <p class="menu-price">480円</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="images/toast.svg" width="400" height="300" alt="バターとはちみつを乗せた厚切りトースト">
+            <div>
+              <h3>はちみつバタートースト</h3>
+              <p>厚切りの食パンに、国産はちみつとバターを添えて。</p>
+              <p class="menu-price">560円</p>
+            </div>
+          </article>
+        </div>
+        <div class="menu-table">
+          <h3>ドリンク</h3>
+          <dl>
+            <div><dt>カフェラテ（ホット／アイス）</dt><dd>580円</dd></div>
+            <div><dt>ブルーベリーミルクラテ<span>季節限定</span></dt><dd>680円</dd></div>
+            <div><dt>アールグレイ</dt><dd>500円</dd></div>
+            <div><dt>自家製レモネード</dt><dd>550円</dd></div>
+          </dl>
+          <p class="note">※表示価格はすべて税込です。セットのお飲み物は100円引きになります。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section info" id="info">
+      <div class="wrap info-inner">
+        <div>
+          <h2 class="title"><small>INFORMATION</small>店舗情報</h2>
+          <dl class="info-list">
+            <div><dt>店名</dt><dd>Blueberry Terrace（ブルーベリー テラス）</dd></div>
+            <div><dt>営業時間</dt><dd>9:00〜18:00（L.O. 17:30）</dd></div>
+            <div><dt>定休日</dt><dd>毎週水曜日</dd></div>
+            <div><dt>所在地</dt><dd>ベリー通り1丁目（架空の住所です）</dd></div>
+            <div><dt>席数</dt><dd>14席（カウンター6席・テーブル8席）</dd></div>
+            <div><dt>お支払い</dt><dd>現金・各種キャッシュレス決済</dd></div>
+          </dl>
+          <p class="note">※サンプルサイトのため、電話番号・地図サービスへのリンクは掲載していません。</p>
+        </div>
+        <figure class="map">
+          <svg viewBox="0 0 480 360" role="img" aria-labelledby="map-title">
+            <title id="map-title">駅から徒歩5分、公園の向かいにお店があることを示す簡略地図（架空）</title>
+            <rect width="480" height="360" rx="12" fill="#fff"/>
+            <path d="M0 250h480M300 0v360" stroke="#dce5f0" stroke-width="34"/>
+            <path d="M0 120h300" stroke="#dce5f0" stroke-width="18"/>
+            <rect x="330" y="40" width="120" height="150" rx="10" fill="#d8ebe0"/>
+            <text x="390" y="120" text-anchor="middle" font-size="16" fill="#3e6b55">公園</text>
+            <rect x="30" y="276" width="150" height="56" rx="8" fill="#183765"/>
+            <text x="105" y="310" text-anchor="middle" font-size="17" fill="#fff">テラス駅</text>
+            <path d="M180 300h100V160" fill="none" stroke="#3975c6" stroke-width="5" stroke-dasharray="10 8"/>
+            <circle cx="280" cy="150" r="22" fill="#3975c6"/>
+            <text x="280" y="157" text-anchor="middle" font-size="18" fill="#fff">★</text>
+            <rect x="130" y="70" width="164" height="34" rx="6" fill="#fff" stroke="#3975c6" stroke-width="3"/>
+            <text x="212" y="93" text-anchor="middle" font-size="15" fill="#183765">Blueberry Terrace</text>
+            <text x="200" y="232" text-anchor="middle" font-size="14" fill="#64748b">徒歩5分</text>
+          </svg>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p class="brand">Blueberry <span>Terrace</span></p>
+      <p>本サイトは Sumi Web が制作した自主制作サンプルです。店舗名・住所・メニュー・価格はすべて架空のものです。店舗・商品の写真はイメージ画像で、実在する店舗・商品ではありません。メニューのイラストは自作です。</p>
+      <a href="../../index.html#works">← Sumi Web の制作サンプル一覧へ</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
-/* 公開前に必ず設定してください。空欄のままではメール作成は実行されません。 */
-const contactEmail = 'kodebykraft@gmail.com';
+/* お問い合わせ先のメールアドレス。空欄のままではメール作成は実行されません。 */
+const contactEmail = 'KodebyKraft@gmail.com';
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('.site-nav');
 menuButton?.addEventListener('click', () => { const open = menuButton.getAttribute('aria-expanded') === 'true'; menuButton.setAttribute('aria-expanded', String(!open)); nav.classList.toggle('is-open', !open); });

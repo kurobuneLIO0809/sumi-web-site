@@ -18,7 +18,7 @@ HTML / CSS / JavaScript だけで動く静的サイトです。サーバー処�
 | 新商品を宣伝するSNS画像 | `samples/sns-post.html` | `assets/images/samples/sns-blueberry-latte.png`（1080×1080） |
 | 商品紹介の縦型ショート動画 | `samples/short-video.html` | `assets/video/cafe-aoiro-short.mp4`（720×1280・15秒） |
 
-- 店舗外観・商品の写真（`samples/cafe/images/storefront.webp`、`blueberry-latte.webp`）はサイト運営者が用意したイメージ画像です。実在する店舗・商品ではありません。メニューのイラストは自作のSVG、BGMはプログラムで合成した自作音源です。
+- 店舗外観・商品の写真（`samples/cafe/images/` の `.webp` ファイル）はサイト運営者が用意したイメージ画像です。実在する店舗・商品ではありません。BGMはプログラムで合成した自作音源です。
 - 画像・動画内の文字には IPAフォント（IPAフォントライセンスv1.0、商用利用可）を使用しています。
 - 画像・動画の再書き出し方法は `tools/samples/README.md` を参照してください。
 

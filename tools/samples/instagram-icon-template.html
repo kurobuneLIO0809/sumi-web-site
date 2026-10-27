@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Instagramアイコン（書き出し用）</title>
+<!-- Sumi Web の Instagram プロフィールアイコン。render-instagram-icon.js で 1080×1080 PNG に書き出します。
+     Instagram は円形に切り抜くため、要素は中央の円（直径約800px）の内側に収めています。 -->
+<style>
+  *{box-sizing:border-box;margin:0}
+  html,body{width:1080px;height:1080px;overflow:hidden}
+  body{font-family:"Inter","Inter Display",sans-serif;position:relative;display:grid;place-items:center}
+  svg.mark{width:430px;height:430px}
+  .word{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:.16em}
+  /* A：紺ベタ＋白いS */
+  .a{background:#183765}
+  .a .ring{position:absolute;width:760px;height:760px;border-radius:50%;border:44px solid #3975c6;border-left-color:transparent;border-bottom-color:transparent;transform:rotate(-20deg)}
+  /* B：白地＋紺の角丸マーク＋文字 */
+  .b{background:#fff}
+  .b .tile{width:500px;height:500px;border-radius:120px;background:#183765;display:grid;place-items:center;margin-top:-90px;box-shadow:0 24px 50px rgba(24,55,101,.18)}
+  .b .tile svg{width:330px;height:330px}
+  .b .word{bottom:250px;color:#183765;font-size:64px}
+  /* C：青のグラデーション＋白いS＋文字 */
+  .c{background:linear-gradient(140deg,#3975c6 0%,#183765 75%)}
+  .c svg.mark{margin-top:-80px;width:380px;height:380px}
+  .c .word{bottom:265px;color:#fff;font-size:60px}
+  .c .line{position:absolute;bottom:240px;left:50%;width:120px;height:6px;margin-left:-60px;background:#9fc4f7;border-radius:3px}
+</style>
+</head>
+<body>
+<template id="s"><svg class="mark" viewBox="10 8 44 50" aria-hidden="true"><path d="M42 18c-3-3-7-5-12-5-8 0-14 5-14 12 0 14 23 11 23 20 0 3-3 5-7 5-5 0-9-2-12-5l-5 6c4 4 10 7 17 7 9 0 16-5 16-13 0-14-23-12-23-20 0-3 3-5 6-5 4 0 7 2 9 4z" fill="#fff"/></svg></template>
+<script>
+  const v = new URLSearchParams(location.search).get('v') || 'a';
+  document.body.className = v;
+  const mark = document.getElementById('s').content.firstElementChild.cloneNode(true);
+  if (v === 'a') { document.body.insertAdjacentHTML('beforeend', '<div class="ring"></div>'); document.body.append(mark); }
+  if (v === 'b') { const tile = document.createElement('div'); tile.className = 'tile'; mark.classList.remove('mark'); tile.append(mark); document.body.append(tile); document.body.insertAdjacentHTML('beforeend', '<p class="word">SUMI WEB</p>'); }
+  if (v === 'c') { document.body.append(mark); document.body.insertAdjacentHTML('beforeend', '<p class="word">SUMI WEB</p><span class="line"></span>'); }
+</script>
+</body>
+</html>

@@ -66,7 +66,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #77a7e5;outline-offset:3p
 #menu{background:#fff}
 .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .menu-card{background:var(--cream);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
-.menu-card img{background:var(--sky);padding:20px 30px 6px}
+.menu-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
 .menu-card>div{padding:20px 22px 24px}
 .menu-card h3{margin:0 0 6px;color:var(--navy);font-size:18px}
 .menu-card p{margin:0;font-size:14px;color:var(--muted)}
